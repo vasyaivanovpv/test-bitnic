@@ -8,6 +8,12 @@ import { connect } from 'react-redux';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 10px;
+  }
   body {
     background-color: rgb(246,246,246);
   }

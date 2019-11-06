@@ -2,6 +2,7 @@ import React from 'react';
 import Login from '../components/Login';
 import { connect } from 'react-redux';
 import { doLogin, doLogout } from '../actions/LoginActionCreators';
+import { PropTypes } from 'prop-types';
 
 class LoginContainer extends React.Component {
   render() {
@@ -16,6 +17,13 @@ class LoginContainer extends React.Component {
     );
   }
 }
+
+LoginContainer.propTypes = {
+  auth: PropTypes.object.isRequired,
+  doLogin: PropTypes.func.isRequired,
+  doLogout: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+};
 
 export default connect(
   null,

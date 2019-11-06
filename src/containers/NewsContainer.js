@@ -4,6 +4,15 @@ import { connect } from 'react-redux';
 import { getNews } from '../actions/NewsActionCreators';
 import { doLogout } from '../actions/LoginActionCreators';
 import { PropTypes } from 'prop-types';
+import styled from 'styled-components';
+
+const LoadingMeassage = styled.span`
+  display: block;
+  height: 100px;
+  padding-top: 46px;
+  text-align: center;
+  font-size: 1.8rem;
+`;
 
 class NewsContainer extends React.Component {
   componentDidMount() {
@@ -15,13 +24,13 @@ class NewsContainer extends React.Component {
     const { articles, isFetching, auth, doLogout } = this.props;
 
     return (
-      <div>
-        {isFetching && 'Loading...'}
+      <React.Fragment>
+        {isFetching && <LoadingMeassage>Loading...</LoadingMeassage>}
         {!isFetching && articles.length === 0 && 'Epmty'}
         {articles.length > 0 && (
           <News articles={articles} auth={auth} doLogout={doLogout} />
         )}
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -30,6 +39,8 @@ NewsContainer.propTypes = {
   articles: PropTypes.array.isRequired,
   isFetching: PropTypes.bool.isRequired,
   getNews: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  doLogout: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = store => ({
