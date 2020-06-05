@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cec8cf5b2fcc34e4585c68ddace6fdf1",
+    "revision": "e1876728dad24c215c4a250beb9356a5",
     "url": "/test-bitnic/index.html"
   },
   {
