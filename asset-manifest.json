@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/test-bitnic/static/css/main.498d002a.chunk.css",
+    "main.js": "/test-bitnic/static/js/main.e16bb4ae.chunk.js",
+    "main.js.map": "/test-bitnic/static/js/main.e16bb4ae.chunk.js.map",
+    "runtime-main.js": "/test-bitnic/static/js/runtime-main.cb81d12c.js",
+    "runtime-main.js.map": "/test-bitnic/static/js/runtime-main.cb81d12c.js.map",
+    "static/js/2.6f15c863.chunk.js": "/test-bitnic/static/js/2.6f15c863.chunk.js",
+    "static/js/2.6f15c863.chunk.js.map": "/test-bitnic/static/js/2.6f15c863.chunk.js.map",
+    "index.html": "/test-bitnic/index.html",
+    "precache-manifest.bd28bbbaeb2955f31eaa02acd7cfc8bc.js": "/test-bitnic/precache-manifest.bd28bbbaeb2955f31eaa02acd7cfc8bc.js",
+    "service-worker.js": "/test-bitnic/service-worker.js",
+    "static/css/main.498d002a.chunk.css.map": "/test-bitnic/static/css/main.498d002a.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb81d12c.js",
+    "static/js/2.6f15c863.chunk.js",
+    "static/css/main.498d002a.chunk.css",
+    "static/js/main.e16bb4ae.chunk.js"
+  ]
+}
